@@ -22,11 +22,13 @@ public class CheckForSeatAvailability {
 		availableSeats.put("B", new ArrayList<>());
 		allocateSeats();
 		
-		System.out.println("Allocated  seats:");
-		  for(Map.Entry<String, List<Integer>> entry: availableSeats.entrySet()) {
-		  entry.getValue().forEach(seatNo ->{
-		  System.out.println(entry.getKey()+" "+seatNo); }); }
-		  System.out.println("-----------------------------------------------------------------------------");
+		/*
+		 * System.out.println("Allocated  seats:"); for(Map.Entry<String, List<Integer>>
+		 * entry: availableSeats.entrySet()) { entry.getValue().forEach(seatNo ->{
+		 * System.out.println(entry.getKey()+" "+seatNo); }); } System.out.println(
+		 * "-----------------------------------------------------------------------------"
+		 * );
+		 */
 		 
 		 
 	}

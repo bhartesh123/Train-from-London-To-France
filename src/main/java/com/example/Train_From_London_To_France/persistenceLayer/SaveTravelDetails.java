@@ -11,8 +11,9 @@ public class SaveTravelDetails {
 	private static List<TravelDetails> details= new ArrayList<>();
 	private boolean seatAvailable=false;
 	
-	public void addTravelDetails(TravelDetails travelDetails) {
+	public TravelDetails addTravelDetails(TravelDetails travelDetails) {
 		details.add(travelDetails);
+		return travelDetails;
 	}
 
 	public TravelDetails getTicketReciept(int ticketId) {

@@ -34,9 +34,9 @@ public class AddTravelDetails {
 		}
 		TravelDetails details2=new TravelDetails(details.getFrom(), details.getTo(), details.getfName(), details.getlName(), details.getEmail(), details.getPrice_paid());
 		details2.setSeatNumber(availability.checkSeatAvailable());
-		saveTravelDetails.addTravelDetails(details2);
+		//saveTravelDetails.addTravelDetails(details2);
 		//System.out.println(details2.toString());
-		return ResponseEntity.ok(details2);
+		return ResponseEntity.ok(saveTravelDetails.addTravelDetails(details2));
 	}
 	
 	@GetMapping("/getReciept/{ticketId}")
